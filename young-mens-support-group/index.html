@@ -13,13 +13,38 @@
             color: var(--fg);
             font-family: Helvetica, Arial, Roboto, sans-serif;
             max-width: 60rem;
-            margin:  2rem auto 2rem auto;
+            margin:  1rem auto;
+            padding: 1rem;
+        }
+        .school-branding {
+            position: relative;
+            left: -1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+        .school-branding a {
+            text-decoration: none;
+            color: var(--accent-color);
+        }
+        .school-branding a:hover {
+            background-color: var(--accent-color);
+            color: var(--fg);
+        }
+        .school-branding .school-mascot {
+            height: 6rem;
+        }
+        .school-branding .school-name {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         h1 {
             text-transform: uppercase;
             font-size: 5rem;
             font-weight: bold;
-            margin-bottom: 0;
+            margin: 0;
         }
         p.subtitle {
             font-size: 2rem;
@@ -58,6 +83,14 @@
         }
     </style>
     <body>
+        <div class="school-branding">
+            <a href="https://www.pps.net/lincoln">
+                <img class="school-mascot" src="lincoln-cardinal.png">
+            </a>
+            <p class="school-name">
+                <a href="https://www.pps.net/lincoln">Lincoln<br>High School</a>
+            </p>
+        </div>
         <h1>Young Men’s Support Group</h1>
         <p class="subtitle">A mental health support group for teens</p>
         <img class="hero" src="hero-image.jpg" alt="Smiling guys">
