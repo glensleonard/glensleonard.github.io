@@ -81,6 +81,22 @@
         .bios .bio:not(:last-child) {
             border-right: 0.125rem dotted var(--fg);
         }
+        .call-to-action a {
+            position: fixed;
+            right: 3rem;
+            bottom: 2rem;
+            background-color: var(--accent-color);
+            padding: 1rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: var(--fg);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .call-to-action a:hover {
+            background-color: var(--fg);
+            color: var(--accent-color);
+        }
     </style>
     <body>
         <div class="school-branding">
@@ -109,6 +125,9 @@
                 <h2>Chris Reigeluth, <span class="certs">Ph.D</span></h2>
                 <p>Bio goes here.</p>
             </div>
+        </div>
+        <div class="call-to-action">
+            <a href="">RSVP here</a>
         </div>
     </body>
 </html>
